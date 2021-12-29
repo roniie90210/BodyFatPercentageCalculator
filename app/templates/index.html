@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    /* background-image: url("../templates/sun.jpg"); */
+    /* background-image: url("sun.jpg") !important; */
+
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 35px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+form {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 2% 35%;
+    border-radius: 10px;
+    padding: 15px 0;
+    min-width: 325px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+    width: 100px;
+    margin: 3% 35%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    form {
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: smaller;
+    }
+    form {
+        margin-left: 18%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}
+</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../templates/images/calculator.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="templates/style.css" /> -->
+    <!-- <link rel="stylesheet" href="../templates/style.css" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Body Fat % Calculator</title>
+    
+  </head>
+  <body>
+    
+    <h1>Body Fat % Calculator</h1>
+    <h4>Enter the details below to get your body fat % now:</h4>
+    <form action="" method="POST">
+        <label for="age">Age</label>
+        <input
+          type="text"
+          id="age"
+          name="age"
+          placeholder="Enter your age here"
+        />
+        <br />
+
+        <label for="height">Height</label>
+        <input
+          type="text"
+          id="height"
+          name="height"
+          placeholder="Enter your height here"
+        />
+        <br />
+
+        <label for="weight">Weight</label>
+        <input
+          type="text"
+          id="weight"
+          name="weight"
+          placeholder="Enter your weight here"
+        />
+        <br />
+        <label for="neck">Neck</label>
+        <input
+          type="text"
+          id="neck"
+          name="neck"
+          placeholder="Enter your neck size here"
+        />
+        <br />
+
+        <label for="chest">Chest</label>
+        <input
+          type="text"
+          id="chest"
+          name="chest"
+          placeholder="Enter your chest size here"
+        />
+        <br />
+
+        <label for="abdomen">Abdomen</label>
+        <input
+          type="text"
+          id="abdomen"
+          name="abdomen"
+          placeholder="Enter your abdomen size here"
+        />
+        <br />
+
+        <label for="hip">Hip</label>
+        <input
+          type="text"
+          id="hip"
+          name="hip"
+          placeholder="Enter your hip size here"
+        />
+        <br />
+
+        <label for="thigh">Thigh</label>
+        <input
+          type="text"
+          id="thigh"
+          name="thigh"
+          placeholder="Enter your thigh size here"
+        />
+        <br />
+
+        <label for="knee">Knee</label>
+        <input
+          type="text"
+          id="knee"
+          name="knee"
+          placeholder="Enter your knee size here"
+        />
+        <br />
+
+        <label for="ankle">Ankle</label>
+        <input
+          type="text"
+          id="ankle"
+          name="ankle"
+          placeholder="Enter your ankle size here"
+        />
+        <br />
+
+        <label for="biceps">Biceps</label>
+        <input
+          type="text"
+          id="biceps"
+          name="biceps"
+          placeholder="Enter your biceps size here"
+        />
+        <br />
+
+        <label for="forearm">Forearm</label>
+        <input
+          type="text"
+          id="forearm"
+          name="forearm"
+          placeholder="Enter your forearm size here"
+        />
+        <br />
+
+        <label for="wrist">Wrist</label>
+        <input
+          type="text"
+          id="wrist"
+          name="wrist"
+          placeholder="Enter your wrist size here"
+        />
+        <br />
+
+        <label for="density">Density</label>
+        <input
+          type="text"
+          id="density"
+          name="density"
+          placeholder="Enter your density here"
+        />
+        <br />
+
+        <input id="submit" type="submit" value="Submit" />
+
+    </form>
+    <p>
+      Your Body Fat % is : {{prediction}}
+    </p>
+    
+  </body>
+</html>

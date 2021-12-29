@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(./images/sun.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 35px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+form {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin: 2% 35%;
+    border-radius: 10px;
+    padding: 15px 0;
+    min-width: 325px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+input {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    background-color: green;
+    color: white;
+    width: 100px;
+    margin: 3% 35%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    form {
+        margin-left: 28%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: smaller;
+    }
+    form {
+        margin-left: 18%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+}
